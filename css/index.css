@@ -130,7 +130,69 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  border: solid pink 2px;
+}
 html,
 body {
   height: 100%;
+}
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: solid red 1px;
+}
+header {
+  height: 10vh;
+  margin-left: 45%;
+}
+header nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid blue 2px;
+}
+header nav a {
+  text-decoration: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: black;
+}
+.content {
+  display: flex;
+  height: 90%;
+  border: solid green 2px;
+}
+.content .left-section {
+  width: 45%;
+  border: solid orange 2px;
+}
+.content .left-section .title {
+  border: solid red 1px;
+}
+.content .left-section .contact {
+  border: solid blue 1px;
+}
+.content .left-section .profile {
+  border: solid red 1px;
+}
+.content .left-section .skills {
+  border: solid blue 1px;
+}
+.content .right-section {
+  width: 55%;
+  border: solid orange 2px;
+}
+.content .right-section .experience {
+  border: solid red 1px;
+}
+.content .right-section .education {
+  border: solid blue 1px;
+}
+.experience {
+  border: solid red 1px;
+}
+.education {
+  border: solid blue 1px;
 }

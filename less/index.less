@@ -53,7 +53,104 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+// Mixins
+
+.space-between-centered(){
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.column-space-between-centered(){
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+// Code Starts Here
+html{
+	border: solid pink 2px;
+}
+
+html, body{
 	height: 100%;
 }
+
+body{
+	margin-left: 5%;
+	margin-right: 5%;
+	border: solid red 1px;
+}
+
+header{
+height: 10vh;
+margin-left: 45%;
+
+	nav{
+		height: 10vh;
+		.space-between-centered();
+		border: solid blue 2px;
+
+		a{
+			text-decoration: none;
+			padding-left: 5%;
+			padding-right: 5%;
+			color: black;
+		}//this closes the links in the nav
+	}//this closes the nav
+}//this closes the header
+
+.content{
+	display: flex;
+	height: 90%;
+	border: solid green 2px;
+
+	.left-section{
+		width: 45%;
+		border: solid orange 2px;
+
+		.title{
+			border: solid red 1px;
+		}
+		
+		.contact{
+			border: solid blue 1px;
+		}
+		
+		.profile{
+			border: solid red 1px;
+		}
+		
+		.skills{
+			border: solid blue 1px;
+		}
+	}//this closes the left-section
+
+	.right-section{
+		width: 55%;
+		border: solid orange 2px;
+
+		.experience{
+			border: solid red 1px;
+		}
+		
+		.education{
+			border: solid blue 1px;
+		}
+
+	}//this closes the right-section	
+}//this closes the content
+
+.experience{
+	border: solid red 1px;
+}
+
+.education{
+	border: solid blue 1px;
+}
+
+
+
+
+
 
