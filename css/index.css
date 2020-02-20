@@ -142,12 +142,40 @@ h2,
 h3,
 h4,
 h5,
+p,
 address,
-p {
+ul,
+nav {
   font-family: 'Oswald', sans-serif;
 }
 h3 {
   font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 8%;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 2%;
+  color: #808080;
+  text-transform: uppercase;
+}
+nav {
+  text-transform: uppercase;
+}
+ul {
+  margin-bottom: 4%;
+}
+p,
+address,
+ul,
+nav {
   letter-spacing: 2px;
 }
 html,
@@ -157,7 +185,6 @@ body {
 body {
   margin-left: 5%;
   margin-right: 5%;
-  border: solid red 1px;
 }
 .content {
   display: flex;
@@ -169,7 +196,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: solid orange 2px;
 }
 .content .left-section .title {
   height: 30%;
@@ -177,7 +203,6 @@ body {
   margin-bottom: 10%;
   color: white;
   background-color: black;
-  border: solid red 1px;
 }
 .content .left-section .title h1 {
   padding-top: 35%;
@@ -202,28 +227,29 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: solid red 2px;
 }
 .content .left-section #left-info .contact {
-  height: 30%;
+  height: 15%;
   width: 80%;
+  margin-bottom: 20%;
   line-height: 2;
-  border: solid blue 1px;
 }
 .content .left-section #left-info .profile {
+  height: 30%;
   width: 80%;
-  border: solid red 1px;
+  margin-bottom: 20%;
+  line-height: 1.5;
 }
 .content .left-section #left-info .skills {
+  height: 30%;
   width: 80%;
-  border: solid blue 1px;
+  line-height: 1.5;
 }
 .content .right-section {
   width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: solid orange 2px;
 }
 .content .right-section header {
   height: 10vh;
@@ -241,8 +267,16 @@ body {
   color: black;
 }
 .content .right-section .experience {
-  border: solid red 1px;
+  height: 30%;
+  width: 90%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  padding-left: 5%;
+  line-height: 1.5;
 }
 .content .right-section .education {
-  border: solid blue 1px;
+  height: 30%;
+  width: 90%;
+  padding-left: 5%;
+  line-height: 1.5;
 }
