@@ -151,7 +151,7 @@ nav {
 h3 {
   font-size: 30px;
   letter-spacing: 2px;
-  margin-bottom: 8%;
+  margin-bottom: 6%;
   text-transform: uppercase;
 }
 h4 {
@@ -162,7 +162,7 @@ h4 {
 h5 {
   font-size: 20px;
   letter-spacing: 2px;
-  margin-bottom: 2%;
+  margin-bottom: 6%;
   color: #808080;
   text-transform: uppercase;
 }
@@ -170,7 +170,8 @@ nav {
   text-transform: uppercase;
 }
 ul {
-  margin-bottom: 4%;
+  padding-left: 5%;
+  margin-bottom: 6%;
 }
 p,
 address,
@@ -267,7 +268,7 @@ body {
   color: black;
 }
 .content .right-section .experience {
-  height: 30%;
+  height: 70%;
   width: 90%;
   margin-top: 20%;
   margin-bottom: 20%;
