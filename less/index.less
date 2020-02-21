@@ -53,18 +53,30 @@ table {
     box-sizing: border-box;
 }
 
-// Code Starts Here
+// Headings/Fonts
 
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
-// Variables
-
-@main-font: 'Oswald', sans-serif;
-
-// Headings/Fonts
-
 h1, h2, h3, h4, h5, p, address, ul, nav{
 	font-family: @main-font;
+}
+
+h1{
+	padding-top: 35%;
+	padding-bottom: 5%;
+	padding-left: 15%;
+	font-size: 50px;
+	line-height: 1.2;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+h2{
+	padding-left: 15%;
+	font-size: 35px;
+	line-height: 1.5;
+	letter-spacing: 8px;
+	color: @subheading-font;
 }
 
 h3{
@@ -83,7 +95,7 @@ h4{
 h5{
 	font-size: 20px;
 	letter-spacing: 2px;
-	color: #808080;
+	color: @subheading-font;
 	text-transform: uppercase;
 }
 
@@ -100,7 +112,10 @@ p, address, ul, nav{
 	line-height: 2;
 }
 
+// Variables
 
+@main-font: 'Oswald', sans-serif;
+@subheading-font: #808080;
 
 // Mixins
 
@@ -122,6 +137,8 @@ p, address, ul, nav{
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+// Page starts here
 
 html, body{
 	height: 200vh;
@@ -146,24 +163,6 @@ body{
 			margin-bottom: 10%;
 			color: white;
 			background-color: black;
-
-			h1{
-				padding-top: 35%;
-				padding-bottom: 5%;
-				padding-left: 15%;
-				font-size: 50px;
-				line-height: 1.2;
-				letter-spacing: 8px;
-				text-transform: uppercase;
-			}
-
-			h2{
-				padding-left: 15%;
-				font-size: 35px;
-				line-height: 1.5;
-				letter-spacing: 8px;
-				color: #808080;
-			}
 		}//this closes the title
 
 		#left-info{
